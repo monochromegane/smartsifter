@@ -4,6 +4,8 @@
 
 refs: [http://cs.fit.edu/~pkc/id/related/yamanishi-kdd00.pdf](http://cs.fit.edu/~pkc/id/related/yamanishi-kdd00.pdf)
 
+![smartsifter](https://user-images.githubusercontent.com/1845486/36640826-93e5ab9a-1a69-11e8-8672-7b59116528ad.gif)
+
 ## Usage
 
 ```go
@@ -18,8 +20,6 @@ ss := smartsifter.NewSmartSifter(r, alpha, beta, cellNum, mixtureNum, dim)
 logLoss := ss.Input(nil, []float64{0.1, 0.2}, true)
 fmt.Println("Score using logLoss: %f\n", logLoss)
 ```
-
-![smartsifter](https://user-images.githubusercontent.com/1845486/36640826-93e5ab9a-1a69-11e8-8672-7b59116528ad.gif)
 
 ## Examples
 
