@@ -1,7 +1,10 @@
 package smartsifter
 
 func newContinuousAlgorism(discount, alpha float64, mixtureNum, dim int) ContinuousAlgorism {
-	return NoOpContinuousAlgorism{}
+	if mixtureNum == 0 {
+		return NoOpContinuousAlgorism{}
+	}
+	return newSDEM(discount, alpha, mixtureNum, dim)
 }
 
 type ContinuousAlgorism interface {
