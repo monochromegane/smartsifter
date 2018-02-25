@@ -23,6 +23,7 @@ var (
 )
 
 func main() {
+	flag.Parse()
 	dir := "tmp"
 	file := "faithful.csv"
 
