@@ -1,4 +1,4 @@
-# go-smartsifter
+# go-smartsifter [![Build Status](https://travis-ci.org/monochromegane/smartsifter.svg?branch=master)](https://travis-ci.org/monochromegane/smartsifter)
 
 **SmartSifter: On-line Unsupervised Outlier Detection Using Finite Mixtures with Discounting Learning Algorithms.** This method is proposed by Yamanishi, K., Takeuchi, J., Williams, G. et al. (2004)
 
