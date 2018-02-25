@@ -16,7 +16,10 @@ func (c NoOpContinuousAlgorism) input([]float64, bool) float64 {
 }
 
 func newCategoricalAlgorism(discount, beta float64, cellNum int) CategoricalAlgorism {
-	return NoOpCategoricalAlgorism{}
+	if cellNum == 0 {
+		return NoOpCategoricalAlgorism{}
+	}
+	return newSDLE(discount, beta, cellNum)
 }
 
 type CategoricalAlgorism interface {
